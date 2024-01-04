@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback 3</title>
+</head>
+<body>
+    <h1>******FORMULARIO DE REGISTRO******</h1>
+<!--En este ejercicio se ha realizado validaciones tanto a nivel de html como en PHP, se puede observar en ambos archivos-->
+    
+    <form method="post" action="recepcion.php">
+        <!--Pongo el cuestionario de nombre siendo obligatorio, es decir no vacío -->
+        <p>
+            <label aling="center">Nombre:</label> <input aling="right" name="nombre" type="text" required> 
+        </p>
+
+        <!--Creo el cuadro de Apellidos siendo obligatorio su requerimiento, es decir no vacío -->
+        <p>
+            <label aling="center">Apellidos:</label> <input aling="right" name="apellidos" type="text" required> 
+
+        <!--Creo el cuadro de Teléfono siendo obligatorio su requerimiento, es decir no vacío, y solo admite números -->
+        <p>
+            <label aling="center">Teléfono:</label> <input aling="right" name="telefono" type="number" required>
+        </p>
+
+        <!--Creo el cuadro de fecha de nacimiento siendo obligatorio su requerimiento, es decir no vacío, y solo se puede poner la fecha (no admiten letras) -->
+        <p>
+            <label aling="center">Fecha nacimiento:</label> <input aling="right" name="nacimiento" type="date" required>
+        </p>
+
+        <!--Creo el cuadro de mail siendo obligatorio su requerimiento, es decir no vacío, y solo admite correos eletrónico -->
+        <p>
+            <label aling="center">Email:</label> <input aling="right" name="correo" type="email" required>
+        </p>
+       
+        <!--Pongo el cuestionario de Dirección siendo obligatorio, es decir no vacío -->
+        <p>
+            <label aling="center">Dirección:</label> <textarea rows:50 cols:50 aling="right" name="direccion"></textarea>
+        </p>
+
+        <p aling="justify">
+            <input type="submit" value="Enviar"> &nbsp;
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
+
+</body>
+</html>
